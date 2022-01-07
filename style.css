@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+ background: linear-gradient(to right, #000000 0%, #100416 100%);
+ /*aqui em baixo estou usando variação no csss*/
+--fonte01:'Anton', sans-serif;
+ 
+ 
+}
+.container{
+max-width: 1000px;
+margin: auto;
+ 
+}
+header{
+ background: linear-gradient(to right, #f7f45c 0%, #d5df47 100%);
+color: rgb(20, 20, 20);
+text-align: center;
+padding: 1rem;
+
+}
+.title{
+font-size:3.5vw;
+font-family: var(--fonte01);
+text-transform: uppercase;
+}
+
+section {
+background-image: url('../images/parapente.jpeg');
+background-size: cover; /* a imagem preenche toda a minha div*/
+overflow: hidden;/*  usando o float ele preenche toda a minha div*/
+}
+ 
+ 
+.formcontainer{
+ max-width: 250px;
+ padding: 20px;
+ background-color: #2b2a2afb;
+border-radius: 16px;
+float: right;
+box-sizing: border-box;
+margin: 10px;
+color: cornsilk;
+
+}
+
+h2{
+font-size: 18px;
+}
+
+.mb{
+margin-bottom: 15px;
+
+}
+
+input , select{
+width: 100%;
+height: 25px;
+border-radius: 4px;
+border: none;
+margin-bottom: 10px;
+background: rgb(246, 240, 240);
+}
+ 
+input[type="submit"]{
+ background: linear-gradient(to right, #efedf3 0%, #f0fc52 100%);
+cursor: pointer;
+font-weight: bold;
+color: rgb(26, 27, 26);
+}
+
+select{
+ /*  colocando meu seletor padrao para todos os navegadores*/
+appearance: none;
+-moz-appearance: none;
+-webkit-appearance: none;
+background-image: url('../images/arrow.jpg');
+background-repeat: no-repeat;
+background-position: right;
+background-position: calc(100% - 10px);
+}
+ 
+footer{
+ padding-top:15px;
+ background: linear-gradient(to right, #f7f45c 0%, #d5df47 100%);
+ padding: 10px;
+text-align: center;
+}
+
+.descricao{
+    color: rgb(19, 18, 18);
+    display: inline-block;
+    max-width: 40%;
+    text-align: left;
+    padding: 8px;
+}
+
+.texto_footer p> a{
+    text-decoration: none;
+    color: rgb(255, 0, 85);
+    
+}
+
+.texto_footer a:hover{
+   
+    background-color: rgba(0, 0, 0, 0.329);
+    transition: 1.5s;
+    border-radius: 10px;
+}
+
+.picture{
+   width: 140px;
+   border-radius: 900px;
+   box-shadow: 8px 0px 10px rgba(0, 0, 0, 0.329);
+}
+
+.descricao h3, p {
+    margin-bottom: 10px;
+}
+    
+.descricao ,h3{
+    font-size: 18px;
+    font-weight: normal;
+}
+    
+.texto_footer{
+    font-size: 14px;
+}
